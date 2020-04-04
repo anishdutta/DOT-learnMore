@@ -1623,5 +1623,6 @@ footer p {
 }
 .dash-img{
   float: left;
-  z-index: 5;
+  z-index: 5 ;
+  height: 100%;
 }
