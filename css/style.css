@@ -1623,9 +1623,17 @@ footer p {
 }
 .dash-img{
   float: left;
-  z-index: 5 ;
   height: 100%;
 }
 .pro-gif{
   display: none;
+}
+.app-img{
+  display: none;
+}
+.down-arrow{
+  float: left;
+  position: relative;
+  top: -250px;
+  left: 50%;
 }

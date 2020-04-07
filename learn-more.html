@@ -94,6 +94,7 @@
 					</div><!-- END REVOLUTION SLIDER -->
 			</div> <!--  /#banner -->
 				<img src="images/prodect/product.jpeg"  class="dash-img" width="100%">
+				<img src="images/prodect/down icon.png" class="down-arrow" width="150px" height="70px">
 					<div id="service-section">
 						<div class="container">
 							<div class="theme-title">
@@ -119,7 +120,7 @@
 								<div class="float-right">
 									<div class="single-team-member">
 										<div class="img" >
-											<img src="images/prodect/app.jpg" alt="Image" width="300px" height="400px">
+											<img src="images/prodect/app.jpg" alt="Image" width="300px" height="400px" class="app-img">
 											<div class="opacity tran4s">
 												<h4>App Image</h4>
 												<p>Message</p>
@@ -932,18 +933,26 @@ $(window).scroll( function(){
         if(st == 0) {
 			$(".dash-img").show( "blind", {direction: "vertical"}, 2000 );
 			$(".pro-gif").hide( "slide", {direction: "left" }, 2000 );
+			$(".app-img").hide( "drop", {direction: "down"}, 1000 );
+			$(".down-arrow").effect( "bounce", {times:5}, 1000 );
+
 
         }
         else {
 			$(".dash-img").hide( "blind", {direction: "vertical"}, 2000 );
 			$(".pro-gif").show( "slide", {direction: "left" }, 2000 );
+			$(".app-img").show( "drop", {direction: "down"}, 2500 );
+			
 
         }
 		lastScrollTop = st;
 		
 		
 
-    })
+	})
+	$(document).ready(function(){
+		$(".down-arrow").effect( "bounce", {times:20}, 10000 );
+	})
 
 		
 	</script>
