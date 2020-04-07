@@ -1626,3 +1626,6 @@ footer p {
   z-index: 5 ;
   height: 100%;
 }
+.pro-gif{
+  display: none;
+}

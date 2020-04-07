@@ -1,11 +1,12 @@
 var x =0;
-$(window).scroll( function(){
-        if(x>30){
-        $(".dash-img").hide( "fold", {horizFirst: true }, 3500 );
+$(window).( function(){
+        if(x>10){
+        $(".dash-img").hide( "fold", {horizFirst: false }, 3500 );
         }
         else{
                 x+=1;
         }
         
     }) ;
-   
+    
+    

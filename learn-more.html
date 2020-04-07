@@ -105,7 +105,7 @@
 								<div class="float-left">
 									<div class="single-team-member">
 										<div class="img">
-											<img src="images/prodect/product-bar.gif" width="320" height="240">
+											<img src="images/prodect/product-bar.gif" width="320" height="240" class="pro-gif">
 												
 											<div class="opacity tran4s">
 												<h4>Product</h4>
@@ -920,8 +920,31 @@
 	<script type = "text/javascript"
 	src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
  </script>
-	<script src="script.js">
+	<script >
+		var x =0;
+$(window).scroll( function(){
+	}) ;
+	
+	
+	var lastScrollTop = 0;
+    $(window).on('scroll', function() {
+        st = $(this).scrollTop();
+        if(st == 0) {
+			$(".dash-img").show( "blind", {direction: "vertical"}, 2000 );
+			$(".pro-gif").hide( "slide", {direction: "left" }, 2000 );
+
+        }
+        else {
+			$(".dash-img").hide( "blind", {direction: "vertical"}, 2000 );
+			$(".pro-gif").show( "slide", {direction: "left" }, 2000 );
+
+        }
+		lastScrollTop = st;
 		
+		
+
+    })
+
 		
 	</script>
 </html>
