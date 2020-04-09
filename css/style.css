@@ -1711,6 +1711,8 @@ svg {
   width: 100px;
   height: 84px;
   fill: black;
+  display: none;
+
 }
 @media(min-width: 1200px){
   .placement{
@@ -1727,7 +1729,6 @@ svg {
     position: absolute;
     right: 700px;
     margin-top: 50px;
-    display: none;
 
   }
 
