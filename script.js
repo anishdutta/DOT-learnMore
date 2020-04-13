@@ -13,7 +13,7 @@ $(window).scroll( function(){
 		
 			$(".dash-img").hide( "slide", {direction: "up"}, 2000 );
 			$(".pro-gif").show( "slide", {direction: "left" }, 2000 );
-                        $(".app-img").show( "slide", {direction: "right"}, 2500 );
+            $(".app-img").show( "slide", {direction: "right"}, 2500 );
 			$("svg").show("clip",{direction: "vertical"}, 2500);
 
 
