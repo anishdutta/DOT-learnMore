@@ -9,11 +9,17 @@ $(window).scroll( function(){
 	var lastScrollTop = 0;
     $(window).on('scroll', function() {
         st = $(this).scrollTop();
-        if(st > 50) {
-		
-			$(".dash-img").hide( "slide", {direction: "up"}, 2000 );
+        if(st == 0) {
+			$(".pro-gif").hide( "slide", {direction: "left" }, 2000/*speed*/ );
+			$("svg").hide("clip",{direction: "vertical"}, 2500/*speed*/);
+                        $(".app-img").hide( "slide", {direction: "right"}, 2500 );
+
+
+        }
+        else {
+
 			$(".pro-gif").show( "slide", {direction: "left" }, 2000 );
-            $(".app-img").show( "slide", {direction: "right"}, 2500 );
+                        $(".app-img").show( "slide", {direction: "right"}, 2500 );
 			$("svg").show("clip",{direction: "vertical"}, 2500);
 
 
@@ -23,6 +29,13 @@ $(window).scroll( function(){
 		
 
 	})
-	$(document).ready(function(){
-		$(".down-arrow").effect( "bounce", {times:20}, 10000 );
-	})
+	$(document).ready(function () {
+		$(window).scroll(function (e) {
+			parallax();
+		});
+	
+		function parallax() {
+			var scrolled = $(window).scrollTop();
+			$('.dash-img').css('top', (scrolled * 0.0715) + 'rem');
+		};
+	});

@@ -1622,11 +1622,12 @@ footer p {
   background:#fff;
 }
 .dash-img{
-  float: left;
-  position: absolute;
-  top: 100px;
-  z-index: 200;
-
+  position: relative;
+  top: -50px;
+    height: 100vh;
+    width: 100%;
+    z-index: -100000;
+    
 }
 .pro-gif{
   display: none;
@@ -1748,4 +1749,7 @@ svg {
 
   }
 
+}
+.dash-container{
+  z-index: 50;
 }
